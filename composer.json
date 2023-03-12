@@ -1,0 +1,14 @@
+{
+  "require": {
+    "phpoffice/phpword": "v0.18.*",
+    "dompdf/dompdf": "^1.0",
+    "knplabs/knp-snappy": "^1.2",
+    "setasign/fpdf": "^1.8",
+    "setasign/tfpdf": "^1.32"
+  },
+  "autoload": {
+    "psr-4": {
+      "laweb\\": "src/"
+    }
+  }
+}
