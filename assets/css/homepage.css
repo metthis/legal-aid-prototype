@@ -1,0 +1,94 @@
+body {
+    width: 100%;
+    background-color: #ffffff;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+}
+
+.column {
+    flex: 50%;
+}
+
+/*
+.column + .column {
+    border-left: 1px solid #ccc;
+}
+*/
+
+h1 {
+    font-size: 2.2em;
+    letter-spacing: 10px;
+    margin-top: 25px;
+}
+
+h1:before, h1:after {
+    content: "\00A0\00A0\00A0\00A0\00A0\00A0\00A0";
+    text-decoration: underline;
+}
+
+.no_letter_spacing {
+    letter-spacing: 0;
+}
+
+h2 {
+    font-size: 1.4em;
+    font-style: italic;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 70px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+a:not([href]) {
+    color: red;
+}
+
+p {
+    font-size: 1em;
+    text-align: justify;
+    margin: 15px 15px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+.subscription_form {
+    background-color: #ddd;
+}
+
+.button, .button:link, .button:visited, .button:hover, .button:active {
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    margin: 10px;
+    padding: 10px 24px;
+    border: 3px solid #000000;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    text-decoration: none;
+}

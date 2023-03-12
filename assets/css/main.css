@@ -1,0 +1,203 @@
+body {
+    width: 70%;
+    background-color: #ffffff;
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    /* font-family: Georgia, "Times New Roman", serif; */
+    margin-left: 15px;
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 2.2em;
+    margin-top: 25px;
+}
+
+h2 {
+    font-size: 1.6em;
+    margin-top: 0;
+}
+
+h2.disclaimer {
+    font-size: 1.2em;
+}
+
+.disclaimer {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.disclaimer:before, .disclaimer:after {
+    content: "--";
+    margin: auto 5px auto;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-top: 70px;
+}
+
+h4 {
+    font-size: 1.2em;
+    margin-top: 40px;
+}
+
+h3 + h4 {
+    margin-top: 15px;
+}
+
+h4:first-child {
+    margin-top: 15px;
+}
+
+/* Used to set off the content following a heading to the right (padding) */
+.after_h  {
+    margin-left: 15px; /* The same margin that h1–h6 have */
+    padding-left: 15px;
+}
+
+a:link, a:visited, a:hover, a:active {
+    color: inherit;
+}
+
+a:not([href]) {
+    color: red;
+}
+
+p {
+    font-size: 1em;
+    text-align: justify;
+    margin: 15px 15px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.center
+{
+    text-align: center;
+}
+
+ol {
+    margin-left: 0;
+    font-weight: bold;
+}
+
+ol li {
+    margin-left: 0;
+    margin-top: 15px;
+    font-weight: normal;
+}
+
+ol li p {
+    margin: 7px 15px 0;
+}
+
+ul {
+    margin-top: 0;
+}
+
+table {
+    margin: 15px 15px 0;
+    width: 100%;
+}
+
+table, th, td {
+    font-family: "Helvetica Neue", Verdana, Arial, sans-serif;
+}
+
+th {
+    background-color: #ccc;
+}
+
+tr:nth-child(even) {background-color: #eee;}
+
+th, td {
+    vertical-align: middle;
+    padding: 3px 15px 3px;
+}
+
+td.leftc {
+    /* vertical-align: top; */
+    width: 45%;
+}
+
+label, input {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.button {
+    margin: 10px;
+    padding: 10px 24px;
+    border: 2px solid #000000;
+    border-radius: 7px;
+    background-color: #ffffff;
+    font-size: 1em;
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+.button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    cursor: pointer;
+    margin: 10px auto auto 15px;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+    background-color: #ccc !important; /* !important makes it work also when it is within the main collapsible content */
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+    background-color: #eee;
+    margin: 0 auto auto 15px;
+    padding: 12px 18px 30px 18px;
+    display: none;
+    overflow: hidden;
+}
+
+.collapsible:after {
+    content: "\02795"; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\02796"; /* Unicode character for "minus" sign (-) */
+}
+
+/* Style the button that is used to open and close the collapsible content that is within the main collapsible content */
+.content .collapsible {
+    background-color: #ffffff;
+}
+
+/* Style the collapsible content that is within the main collapsible content. Note: hidden by default */
+.content .content {
+    background-color: #ffffff;
+}
