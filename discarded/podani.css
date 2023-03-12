@@ -1,0 +1,57 @@
+@page {
+    size: A4;
+    margin: 2.5cm;
+}
+
+body {
+    font-family: /* "Cormorant Garamond", "EB Garamond", */ "Times New Roman", serif;
+    font-size: 11px;
+    line-height: 1.2;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+table{
+    width: 100%;
+    font-size: inherit;
+}
+
+tr.height1{
+    height: 1.31cm;
+}
+
+tr.height2{
+    height: 2.25cm;
+}
+
+td {
+    text-align: left;
+    vertical-align: bottom;
+}
+
+td:nth-child(2) {
+    width: 12.73cm;
+}
+
+h1 {
+    margin-top: 48px;
+    text-align: center;
+    text-decoration-line: underline;
+}
+
+div.text {
+    margin-top: 12px;
+}
+
+div.date {
+    margin-top: 48px;
+    text-align: right;
+}
+
+div.signature {
+    margin-top: 48px;
+    text-align: right;
+    font-weight: bold;
+}
